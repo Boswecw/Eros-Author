@@ -335,7 +335,7 @@ function handleExternalLinkClick(url: string, label: string) {
 		<div class="container">
 			<h2>Follow &amp; Say Hello</h2>
 			<div class="social-links">
-				<a href="https://www.patreon.com/posts/welcome-to-140661791?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" aria-label="Patreon" rel="noopener noreferrer" onclick={() => handleExternalLinkClick('patreon', 'Patreon')}>
+				<a href="https://www.patreon.com/posts/welcome-to-140690076?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" aria-label="Patreon" rel="noopener noreferrer" onclick={() => handleExternalLinkClick('patreon', 'Patreon')}>
 					<i class="fab fa-patreon" aria-hidden="true"></i> Patreon
 				</a>
 				<a href="/instagram" aria-label="Instagram" rel="noopener noreferrer" onclick={() => handleExternalLinkClick('/instagram', 'Instagram')}>
