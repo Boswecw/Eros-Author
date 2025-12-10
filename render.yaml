@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: eros-author-site
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: pnpm install && pnpm run build
+    startCommand: node build/index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: ORIGIN
+        sync: false
+      - key: PUBLIC_SITE_URL
+        value: https://epwcauthor.com
+      - key: PUBLIC_FORMSPREE_ID
+        value: xqaybvvq
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: X-Adult-Content
+        value: "1"
+      - path: /*
+        name: Rating
+        value: RTA-5042-1996-1400-1577-RTA
